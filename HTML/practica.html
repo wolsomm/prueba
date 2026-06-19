@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1{
+            margin: 0 auto;
+
+        }
+        .contenedorpadre{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-top: 170px;
+            height: 450px;
+            gap:40px;
+            text-align: center;
+        }
+        .hijo1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(26, 32, 121);
+            padding: 50px 20px;
+            border-radius: 20px;
+        }
+        .hijo2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(72, 45, 139);
+            padding: 50px 20px;
+            border-radius: 20px;
+
+        }
+        .hijo3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(66, 54, 199);
+            padding: 50px 20px;
+            border-radius: 20px;
+        }
+        @media(max-width:768px){
+            .contenedorpadre{
+                grid-template-columns: none;
+                grid-template-rows: repeat(3,auto);
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedorpadre">
+        <div class="hijo1">
+            <h1>Item 1</h1>
+        </div>
+        <div class="hijo2">
+            <h1>Item 2</h1>
+        </div>
+        <div class="hijo3">
+            <h1>Item 3</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

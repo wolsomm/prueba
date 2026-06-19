@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Only Dogs</title>
+    <style>
+        body {
+            background-color: rgb(251, 206, 206);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgb(255, 69, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-bottom: 5px;
+        }
+
+        .barra {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(139, 35, 35);
+        }
+
+        .barrahijo {
+            padding: 12px 25px;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        .barrahijo:last-child {
+            border-right: none;
+        }
+
+        .barrahijo h4 {
+            margin: 0;
+            color: white;
+            font-weight: normal;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .galeriatitulo {
+            text-align: center;
+            padding: 25px 0 10px 0;
+        }
+
+        .galeriatitulo h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .galeriatitulo p {
+            margin: 5px 0;
+        }
+
+        .galeriagrid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(255, 69, 0);
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .galeriaitem {
+            flex: 1;
+            border: 2px solid rgb(255, 69, 0);
+            overflow: hidden;
+        }
+
+        .galeriaitem img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .contenidoinfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column h2 {
+            color: rgb(178, 34, 34);
+            font-size: 1.5rem;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .column ul {
+            list-style-type: square;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .column a {
+            color: rgb(255, 140, 0);
+            text-decoration: underline;
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .column p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .column form div {
+            margin-bottom: 12px;
+        }
+
+        .column input[type="text"],
+        .column input[type="email"],
+        .column textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .column textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .column button {
+            background-color: rgb(255, 165, 0);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            float: right;
+        }
+
+        footer {
+            background-color: rgb(255, 69, 0);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+        }
+
+        footer h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        footer p {
+            margin: 5px 0 0 0;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo-perro.png" alt="Logo Only Dogs">
+        </div>
+        <div class="barra">
+            <div class="barrahijo">
+                <h4>Home</h4>
+            </div>
+            <div class="barrahijo">
+                <h4>Blog</h4>
+            </div>
+            <div class="barrahijo">
+                <h4>Contact</h4>
+            </div>
+            <div class="barrahijo">
+                <h4>About Us</h4>
+            </div>
+            <div class="barrahijo">
+                <h4>Gallery</h4>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="perro-principal.jpg" alt="Perro negro echado en el pasto">
+    </section>
+
+    <main>
+        <section class="galeriatitulo">
+            <h1>Galeria de fotos</h1>
+            <p>Nuestra galeria de mascotas</p>
+        </section>
+
+        <section class="galeriagrid">
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+            <div class="galeriaitem"><img src="perro-mini.jpg" alt="Miniatura de perro"></div>
+        </section>
+
+        <section class="contenidoinfo">
+            <div class="column">
+                <h2>Tipos de perros</h2>
+                <ul>
+                    <li>Dogo argentino</li>
+                    <li>Pastor Aleman</li>
+                    <li>Cachuchin</li>
+                </ul>
+                <a href="#">Más razas</a>
+            </div>
+
+            <div class="column">
+                <h2>Dogs</h2>
+                <p>Dogs knows as humanitys best friends, offer loyalty, joy, and companionship, enriching our lives
+                    with unconditional love and fun.</p>
+                <p>Dogs knows as humanity's best friends, offer loyalty, joy, and companionship, enriching our lives
+                    with unconditional love and fu.</p>
+                <a href="#">More dogs</a>
+            </div>
+
+            <div class="column">
+                <h2>Contact with us</h2>
+                <form action="#" method="post">
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>ONLY DOGS</h2>
+        <p>Marca registrada</p>
+    </footer>
+
+</body>
+
+</html>
